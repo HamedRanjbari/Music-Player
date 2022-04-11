@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Music Player | Hamed Ranjbari</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="bgContainer">
+      <img src="img/bg1.jpg" alt="bg 1" id="background" class="active"/>
+    </div>
+    <!-- Player section -->
+    <div class="playerContainer">
+      <div class="Content">
+        <div class="imgCover">
+          <img src="img/cover1.jpg" alt="cover" id="cover" class="active" />
+        </div>
+        <h2 id="title"></h2>
+        <h3 id="artist"></h3>
+        <audio id="musicId" src="Audio/NoisestormCrabRave.mp3"></audio>
+        <!-- Progress bar -->
+        <div class="progressContainer" id="progressContainer">
+          <div class="progress" id="progress"></div>
+          <div class="durationSection">
+            <span id="currentTime"></span>
+            <span id="duration"></span>
+          </div>
+        </div>
+        <!-- Controls section -->
+        <div class="playerControls">
+          <i class="bi bi-skip-backward" id="prev" title="Previous"></i>
+          <i class="bi bi-play" id="play" title="Play"></i>
+          <i class="bi bi-skip-forward" id="next" title="Next"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
